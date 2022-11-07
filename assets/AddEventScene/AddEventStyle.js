@@ -1,0 +1,227 @@
+import { StyleSheet, Dimensions } from "react-native";
+
+const defaultmargin = 20;
+const defaultradius = 30;
+const defaultradius2 = 10;
+const windowHeight = Dimensions.get("window").height;
+const windowWidth = Dimensions.get("window").width;
+
+export const styles = StyleSheet.create({
+    shadowProp: {
+        shadowOffset: {
+            width: 0,
+            height: 0.5,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3,
+        shadowColor: "#000",
+        elevation: 3,
+    },
+    defaulttext: {
+        fontSize: 16,
+        fontWeight: '400',
+        color: 'black',
+    },
+    defaultbutton: {
+        backgroundColor: 'white',
+        borderRadius: 30,
+        borderColor: '#CCCCCC',
+        borderWidth: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    defaultbuttontext: {
+        fontWeight: '400',
+        fontSize: 13,
+        color: '#CCCCCC',
+    },
+    body: {
+        width: windowWidth,
+        height: windowHeight,
+        backgroundColor: 'white',
+    },
+    titleform: {
+        marginTop: 35,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
+    titleinput: {
+        width: windowWidth-2*defaultmargin-35,
+        height: 50,
+        fontSize: 20,
+        fontWeight: '500',
+    },
+    border: {
+        width: windowWidth-2*defaultmargin,
+        height: 5,
+        borderTopWidth: 1.2,
+        borderColor: '#CCCCCC',
+    },
+    colorindicator: {
+        width: 20,
+        height: 20,
+        borderRadius: 100,
+        backgroundColor: '#FF8888',
+        marginLeft: 10,
+        marginRight: 10,
+    },
+    modalback: {
+        backgroundColor: 'transparent',
+        width: windowWidth,
+        height: 50,
+    },
+    modalbackground: {
+        width: windowWidth,
+        height: windowHeight,
+        justifyContent: "flex-end",
+        alignItems: "center",
+        backgroundColor: '#00000050',
+    },
+    modalform: {
+        width: windowWidth,
+        height: windowHeight-50,
+        backgroundColor: "#FAFAFAED",
+        borderTopLeftRadius: 15,
+        borderTopRightRadius: 15,
+        alignItems: "center",
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5
+    },
+    pallete: {
+        marginTop: 15,
+        alignSelf: 'center',
+        width: windowWidth-30,
+        height: 600,
+        resizeMode: 'stretch',
+        zIndex: 0,
+    },
+    toggleform: {
+        marginTop: 25,
+        width: windowWidth-2*defaultmargin,
+        height: 32,
+        backgroundColor: 'rgba(118, 118, 128, 0.12)',
+        borderRadius: 8,
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingLeft: 4,
+        paddingRight: 4,
+    },
+    buttonform: {
+        width: (windowWidth-2*defaultmargin)/2,
+        height: 28,
+        backgroundColor: 'white',
+        borderRadius: 7,
+        position: 'absolute',
+    },
+    buttontextform: {
+        width: windowWidth-2*defaultmargin,
+        position: 'absolute',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+    },
+    buttontext: {
+        fontSize: 13,
+        fontWeight: '500',
+        color: 'black',
+    },
+    timeform: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: 40,
+        width: windowWidth-2*defaultmargin,
+    },
+    startendtimeform: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        width: windowWidth-2*defaultmargin,
+        marginTop: 10,
+    },
+    timepanel: {
+        alignItems: 'center',
+        height: 55,
+        justifyContent: 'space-between',
+    },
+    textinputform: {
+        width: windowWidth-2*defaultmargin-35,
+        height: 50,
+        marginTop: 5,
+        marginBottom: 10,
+        marginLeft: 10,
+        marginRight: 5,
+    },
+    defaultform: {
+        width: windowWidth-2*defaultmargin+3,
+        height: 50,
+        marginTop: 5,
+        marginBottom: 10,
+        marginRight: 5,
+        marginLeft: 5,
+        alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    showalarm: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingLeft: 10,
+        justifyContent: 'flex-end',
+        height: 50,
+        width: 120,
+    },
+    optionform: {
+        width: windowWidth-2*defaultmargin,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginBottom: 15,
+    },
+    holidaybutton: {
+        width: 90,
+        height: 27,
+        // backgroundColor: 'blue',
+        marginRight: 42,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'flex-end',
+    },
+    checkbox: {
+        width: 22,
+        height: 22,
+        backgroundColor: 'white',
+        borderRadius: 100,
+        borderColor: '#CCCCCC',
+        borderWidth: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginRight: 5,
+    },
+    check: {
+        width: 17,
+        height: 17,
+        backgroundColor: '#4E7BE9',
+        borderRadius: 100,
+    },
+    dayselected: {
+        width: 30,
+        height: 30,
+        borderRadius: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    daysofweek: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        width: windowWidth-95,
+        marginBottom: 20,
+    },
+});

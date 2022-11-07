@@ -1,0 +1,260 @@
+import { StyleSheet, Dimensions } from "react-native";
+
+const defaultmargin = 20;
+const defaultradius = 30;
+const defaultradius2 = 10;
+const windowHeight = Dimensions.get("window").height;
+const windowWidth = Dimensions.get("window").width;
+const imagesize = windowHeight-510;
+
+export const styles = StyleSheet.create({
+    shadowProp: {
+        shadowOffset: {
+            width: 0,
+            height: 0.5,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3,
+        shadowColor: "#000",
+        elevation: 3,
+    },
+    body: {
+        flex: 1,
+    },
+    gradientbackground: {
+        flex: 1,
+        borderTopColor: '#ABB0BC7D',
+        borderTopWidth: 2,
+    },
+    calendarbody: {
+        alignItems: 'center',
+        width: windowWidth,
+        height: windowHeight*2,
+    },
+    imagenametext: {
+        marginTop: 30,
+        marginLeft: defaultmargin,
+        alignSelf: 'flex-start',
+        fontWeight: '500',
+        fontSize: 13,
+        color: '#00000099',
+    },
+    image: {
+        alignSelf: 'center',
+        width: imagesize,
+        height: imagesize,
+        resizeMode: 'stretch',
+    },
+    descriptiontext: {
+        alignSelf: 'flex-end',
+        fontWeight: '500',
+        fontSize: 13,
+        color: '#00000099',
+        marginRight: defaultmargin,
+    },
+    descriptionform: {
+        width: windowWidth,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    detailbutton: {
+        width: 90,
+        height: 22,
+        backgroundColor: 'rgba(255,255,255,0.6)',
+        borderRadius: defaultradius2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginLeft: defaultmargin,
+    },
+    detailbuttontext: {
+        fontWeight: '400',
+        fontSize: 11,
+        color: '#000000',
+    },
+    calendarbody: {
+        backgroundColor: 'white',
+        height: windowHeight-30,
+        width: windowWidth,
+        borderTopLeftRadius: defaultradius,
+        borderTopRightRadius: defaultradius,
+        marginTop: 30,
+    },
+    calendartopform: {
+        width: windowWidth,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'baseline',
+    },
+    yearmonthtext: {
+        marginLeft: defaultmargin,
+        marginTop: defaultmargin,
+        marginRight: 10,
+        marginBottom: 5,
+        letterSpacing: 0.7,
+        fontWeight: '700',
+        fontSize: 20,
+        color: 'black',
+    },
+    yearmonthbutton: {
+        borderTopLeftRadius: defaultradius,
+    },
+    modebutton: {
+        width: 60,
+        height: 22,
+        backgroundColor: 'rgb(255,255,255)',
+        borderRadius: defaultradius2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginLeft: defaultmargin,
+        marginRight: defaultmargin,
+    },
+    modebuttontext: {
+        fontWeight: '400',
+        fontSize: 11,
+        color: '#000000',
+    },
+    dayweekform: {
+        width: windowWidth,
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        marginTop: 5,
+    },
+    dayweektext: {
+        fontWeight: '400',
+        fontSize: 12,
+        color: '#CCCCCC',
+    },
+    datebody: {
+        width: windowWidth,
+        height: 375,
+        marginTop: 10,
+    },
+    scheduleheaderform: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop: 10,
+        marginBottom: 15,
+        width: windowWidth-2*defaultmargin,
+        marginLeft: defaultmargin,
+        marginRight: defaultmargin,
+    },
+    scheduledatetext: {
+        fontSize: 17,
+        fontWeight: '400',
+        color: 'black',
+    },
+    schedulebody: {
+        marginLeft: defaultmargin,
+        width: windowWidth-2*defaultmargin,
+    },
+    schedule: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 5,
+        marginTop: 5,
+    },
+    dot: {
+        width: 5,
+        height: 5,
+        borderRadius: 100,
+        backgroundColor: '#FF0000',
+        alignSelf: 'flex-start',
+        position: 'relative',
+        top: 7,
+        marginRight: 10,
+    },
+    scheduelboldtext: {
+        color: 'black',
+        fontSize: 17,
+        fontWeight: '700',
+    },
+    scheduelthintext: {
+        color: 'black',
+        fontSize: 11,
+        fontWeight: '400',
+    },
+    border: {
+        width: windowWidth-2*defaultmargin,
+        height: 5,
+        marginTop: 5,
+        borderTopWidth: 1.5,
+        borderColor: '#ABB0BC',
+    },
+    addbutton: {
+        width: 35,
+        height: 35,
+        backgroundColor: 'rgb(255,255,255)',
+        borderRadius: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: defaultmargin*2,
+        marginBottom: defaultmargin,
+        alignSelf: 'center',
+    },
+    tiptext: {
+        fontSize: 11,
+        fontWeight: '600',
+        alignSelf: 'center',
+    },
+    deletebutton: {
+        alignSelf: 'center',
+        width: 30,
+        height: 30,
+        backgroundColor: '#ff4f4f',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginLeft: 10,
+        borderRadius: 10,
+    },
+    category: {
+
+    },
+    categoryheader: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: windowWidth-2*defaultmargin,
+        height: 30,
+        marginTop: 5,
+        marginBottom: 5,
+    },
+    categorycolor: {
+        width: 20,
+        height: 20,
+        borderRadius: 7,
+        marginRight: 10,
+    },
+    categorytext: {
+        fontWeight: '400',
+        fontSize: 15,
+        color: 'black',
+        top: -1,
+    },
+    todoform: {
+        width: windowWidth-2*defaultmargin,
+        height: 25,
+        flexDirection: 'row',
+        // backgroundColor: 'blue',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        
+    },
+    checkbox: {
+        width: 17,
+        height: 17,
+        backgroundColor: 'white',
+        borderColor: 'black',
+        borderWidth: 1,
+        borderRadius: 6,
+        marginRight: 10,
+        marginLeft: 30,
+    },
+    todotext: {
+        fontWeight: '400',
+        fontSize: 13,
+        color: 'black',
+        top: -1,
+    },
+});
